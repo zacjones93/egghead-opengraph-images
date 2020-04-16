@@ -76,7 +76,7 @@ function App() {
             padding: "2rem"
           }}
         >
-          {window.timeToRead && <div>{window.timeToRead} min read</div>}
+          {window.timeToRead.length > 0 && <div>{window.timeToRead} min read</div>}
           <span>{window.author}</span>
         </div>
       </div>
