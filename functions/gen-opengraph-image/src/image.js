@@ -76,23 +76,7 @@ function App() {
             padding: "2rem"
           }}
         >
-          <ul
-            css={{
-              listStyleType: "none",
-              display: "flex",
-              "& li": {
-                marginRight: ".5rem",
-                "&:not(:last-child):after": {
-                  content: "'•'",
-                  marginLeft: ".5rem"
-                }
-              }
-            }}
-          >
-            {window.tags.map(tag => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
+          {window.timeToRead && <div>{window.timeToRead} min read</div>}
           <span>{window.author}</span>
         </div>
       </div>
