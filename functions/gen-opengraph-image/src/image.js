@@ -34,7 +34,6 @@ function App() {
       />
       <div
         css={{
-          css={{
           background: "hsl(230, 25%, 18%)",
           margin: "40px",
           display: "flex",
