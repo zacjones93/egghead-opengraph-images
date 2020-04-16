@@ -40,7 +40,6 @@ function App() {
           flex: 1,
           flexDirection: "column",
           borderRadius: 10,
-          padding: "8rem",
           boxShadow: `inset 3px 3px 21px 2px hsl(260, 20%, 40%)`
         }}
       >
@@ -48,7 +47,8 @@ function App() {
           css={{
             color: "hsl(210, 50%, 96%)",
             height: "100%",
-            textAlign: "center"
+            textAlign: "center",
+            padding: "6rem"
           }}
         >
           <Textfit
@@ -73,7 +73,7 @@ function App() {
             display: "flex",
             justifyContent: "space-between",
             fontSize: 36,
-            margin: "-5rem"
+            padding: "2rem"
           }}
         >
           <ul
