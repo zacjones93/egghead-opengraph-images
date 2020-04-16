@@ -22,13 +22,10 @@ exports.handler = async function(event, ctx) {
   </html>
   `);
   const { queryStringParameters } = event;
-  const tags = queryStringParameters.tags
-    ? decodeURIComponent(queryStringParameters.tags).split(",")
-    : [];
   await page.addScriptTag({
     content: `
+  window.timeToRead = "${queryStringParameters.author || ""}";
   window.title = "${queryStringParameters.title || "No Title"}";
-  window.tags = ${JSON.stringify(tags)};
   window.author = "${queryStringParameters.author || ""}";
   `
   });
