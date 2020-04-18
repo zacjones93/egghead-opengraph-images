@@ -16,13 +16,14 @@ function App() {
         overflow: "hidden"
       }}
     >
+         <link rel="stylesheet" href="https://use.typekit.net/osf8fyt.css"></link>
       <Global
         styles={{
           "*": {
             boxSizing: "border-box",
             margin: 0,
             padding: 0,
-            fontFamily: "system-ui"
+            fontFamily: "adobe-garamond-pro"
           },
           ".emoji": {
             height: "1em",
@@ -34,18 +35,18 @@ function App() {
       />
       <div
         css={{
-          background: "hsl(230, 25%, 18%)",
+          background: "hsl(0, 0%, 100%)",
           margin: "40px",
           display: "flex",
           flex: 1,
           flexDirection: "column",
           borderRadius: 10,
-          boxShadow: `inset 3px 3px 21px 2px hsl(260, 20%, 40%)`
+          boxShadow: `hsl(197, 23%, 55%)`
         }}
       >
         <h1
           css={{
-            color: "hsl(210, 50%, 96%)",
+            color: "black",
             height: "100%",
             textAlign: "center",
             padding: "6rem"
@@ -69,7 +70,7 @@ function App() {
         </h1>
         <div
           css={{
-            color: "white",
+            color: "black",
             display: "flex",
             justifyContent: "space-between",
             fontSize: 36,
