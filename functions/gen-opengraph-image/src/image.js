@@ -29,8 +29,8 @@ function App() {
             boxSizing: "border-box",
             margin: 0,
             padding: 0,
-            fontFamily: "adobe-garamond-pro",
-            fontWeight: 400,
+            fontFamily: "proxima-nova",
+            fontWeight: 100,
           },
         }}
       />
