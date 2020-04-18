@@ -76,14 +76,15 @@ function App() {
             textAlign: "center",
             height: "100%",
             fontFamily: "adobe-garamond-pro",
-            fontWeight: 400
+            fontWeight: 400,
+            color: "#000000"
           }}
         >
           {window.description}
         </Textfit>
         <div
           css={{
-            color: "#00000",
+            color: "#000000",
             fontFamily: "adobe-garamond-pro",
             fontWeight: 400,
             display: "flex",
