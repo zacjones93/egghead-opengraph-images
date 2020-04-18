@@ -29,6 +29,10 @@ function App() {
             boxSizing: "border-box",
             margin: 0,
             padding: 0
+          },
+          ".div": {
+            fontFamily: "adobe-garamond-pro",
+            fontWeight: 400
           }
         }}
       />
@@ -69,19 +73,21 @@ function App() {
             </Twemoji>
           </Textfit>
         </h1>
-        <Textfit
-          max={36}
-          min={20}
-          style={{
+        <div css={{
             textAlign: "center",
             height: "100%",
             fontFamily: "adobe-garamond-pro",
             fontWeight: 400,
             color: "#000000"
-          }}
+          }}>
+        <Textfit
+          max={36}
+          min={20}
+          
         >
           {window.description}
         </Textfit>
+        </div>
         <div
           css={{
             color: "#000000",
