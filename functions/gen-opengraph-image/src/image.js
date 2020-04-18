@@ -57,7 +57,7 @@ function App() {
         >
           <Textfit
             max={256}
-            min={24}
+            min={48}
             style={{
               minHeight: "80%",
               maxHeight: "80%",
@@ -77,8 +77,8 @@ function App() {
             color: "#000000"
           }}>
         <Textfit
-          max={36}
-          min={20}
+          max={48}
+          min={36}
           
         >
           {window.description}
