@@ -28,12 +28,10 @@ function App() {
           "*": {
             boxSizing: "border-box",
             margin: 0,
-            padding: 0
-          },
-          ".div": {
+            padding: 0,
             fontFamily: "adobe-garamond-pro",
-            fontWeight: 400
-          }
+            fontWeight: 400,
+          },
         }}
       />
       <div
@@ -76,8 +74,6 @@ function App() {
         <div css={{
             textAlign: "center",
             height: "100%",
-            fontFamily: "adobe-garamond-pro",
-            fontWeight: 400,
             color: "#000000"
           }}>
         <Textfit
@@ -91,8 +87,6 @@ function App() {
         <div
           css={{
             color: "#000000",
-            fontFamily: "adobe-garamond-pro",
-            fontWeight: 400,
             display: "flex",
             justifyContent: "space-between",
             fontSize: 36,
