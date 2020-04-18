@@ -7,7 +7,8 @@ cloudinary.config({
 });
 
 exports.handler = async function (event, ctx) {
-  const {queryStringParameters} = event
+  const {queryStringParameters} = event;
+  console.log(queryStringParameters);
   try {
     // https://res.cloudinary.com/daxsro6st/image/upload/v1587129280/og-images/1x1-0050ff7f_tocst6.png
     const imageUrl = cloudinary.url(
@@ -24,6 +25,9 @@ exports.handler = async function (event, ctx) {
         }
       }
     );
+    console.log(`https://quizzical-liskov-0bc7e1.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
+      queryStringParameters
+    )}`)
     return {
       statusCode: 302,
       headers: {
