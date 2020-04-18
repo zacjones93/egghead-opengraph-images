@@ -2,7 +2,7 @@ const cloudinary = require("cloudinary").v2;
 const qs = require('querystring');
 cloudinary.config({
   cloud_name: "daxsro6st",
-  api_key: ProcessingInstruction.env.CLOUDINARY_KEY,
+  api_key: process.env.CLOUDINARY_KEY,
   api_secret: process.env.CLOUDINARY_SECRET
 });
 
