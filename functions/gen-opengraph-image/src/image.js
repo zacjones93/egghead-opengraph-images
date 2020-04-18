@@ -16,20 +16,19 @@ function App() {
         overflow: "hidden"
       }}
     >
-         <link rel="stylesheet" href="https://use.typekit.net/osf8fyt.css"></link>
+      <link rel="stylesheet" href="https://use.typekit.net/osf8fyt.css" />
       <Global
         styles={{
-          "*": {
-            boxSizing: "border-box",
-            margin: 0,
-            padding: 0,
-            fontFamily: "adobe-garamond-pro"
-          },
           ".emoji": {
             height: "1em",
             width: "1em",
             margin: "0 .05em 0 .1em",
             verticalAlign: "-0.1em"
+          },
+          "*": {
+            boxSizing: "border-box",
+            margin: 0,
+            padding: 0
           }
         }}
       />
@@ -46,10 +45,12 @@ function App() {
       >
         <h1
           css={{
-            color: "black",
+            color: "#000000",
             height: "100%",
             textAlign: "center",
-            padding: "6rem"
+            padding: "4rem",
+            fontFamily: "proxima-nova",
+            fontWeight: 100
           }}
         >
           <Textfit
@@ -68,16 +69,30 @@ function App() {
             </Twemoji>
           </Textfit>
         </h1>
+        <Textfit
+          max={36}
+          min={20}
+          style={{
+            textAlign: "center",
+            height: "100%",
+            fontFamily: "adobe-garamond-pro",
+            fontWeight: 400
+          }}
+        >
+          {window.description}
+        </Textfit>
         <div
           css={{
-            color: "black",
+            color: "#00000",
+            fontFamily: "adobe-garamond-pro",
+            fontWeight: 400,
             display: "flex",
             justifyContent: "space-between",
             fontSize: 36,
             padding: "2rem"
           }}
         >
-          {window.timeToRead.length > 0 && <div>{window.timeToRead} min read</div>}
+          {window.timeToRead > 0 && <div>{window.timeToRead} min read</div>}
           <span>{window.author}</span>
         </div>
       </div>
@@ -85,4 +100,5 @@ function App() {
   );
 }
 
-render(<App />, document.getElementById("corgi"));
+render(<App />, document.getElementById('corgi'))
+
