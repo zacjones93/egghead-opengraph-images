@@ -10,7 +10,7 @@ function App() {
       css={{
         width: 1200,
         height: 630,
-        background: `hsl(260, 100%, 80%)`,
+        background: `hsl(197, 23%, 55%)`,
         position: "absolute",
         display: "flex",
         overflow: "hidden"
