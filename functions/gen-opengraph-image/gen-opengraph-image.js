@@ -25,7 +25,7 @@ exports.handler = async function(event, ctx) {
   await page.addScriptTag({
     content: `
   window.timeToRead = "${queryStringParameters.timeToRead || ""}";
-  window.title = "${queryStringParameters.title || "No Title"}";
+  window.title = "${decodeURIComponent(queryStringParameters.title) || "No Title"}";
   window.description = "${queryStringParameters.description || "No Description"}";
   window.author = "${queryStringParameters.author || ""}";
   `
