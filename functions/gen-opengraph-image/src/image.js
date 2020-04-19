@@ -74,7 +74,8 @@ function App() {
         <div css={{
             textAlign: "center",
             height: "100%",
-            color: "#000000"
+            color: "#000000",
+            padding: "4rem",
           }}>
         <Textfit
           max={48}
