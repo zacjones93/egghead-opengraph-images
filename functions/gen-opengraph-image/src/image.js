@@ -30,8 +30,8 @@ function App() {
             margin: 0,
             padding: 0,
             fontFamily: "proxima-nova",
-            fontWeight: 100,
-          },
+            fontWeight: 100
+          }
         }}
       />
       <div
@@ -50,13 +50,13 @@ function App() {
             color: "#000000",
             height: "100%",
             textAlign: "center",
-            padding: "4rem",
+            padding: "5rem",
             fontFamily: "proxima-nova",
             fontWeight: 100
           }}
         >
           <Textfit
-            max={256}
+            max={180}
             min={48}
             style={{
               minHeight: "80%",
@@ -71,20 +71,6 @@ function App() {
             </Twemoji>
           </Textfit>
         </h1>
-        <div css={{
-            textAlign: "center",
-            height: "100%",
-            color: "#000000",
-            padding: "4rem",
-          }}>
-        <Textfit
-          max={48}
-          min={36}
-          
-        >
-          {window.description}
-        </Textfit>
-        </div>
         <div
           css={{
             color: "#000000",
@@ -94,7 +80,7 @@ function App() {
             padding: "2rem"
           }}
         >
-          {window.timeToRead > 0 && <div>{window.timeToRead} min read</div>}
+          {window.type != null && <div>{window.type}</div>}
           <span>{window.author}</span>
         </div>
       </div>
