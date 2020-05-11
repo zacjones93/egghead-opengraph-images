@@ -20,9 +20,9 @@ exports.handler = async function (event, ctx) {
         custom_pre_function: {
           function_type: "remote",
           source: encodeURIComponent( 
-            `https://quizzical-liskov-0bc7e1.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(queryStringParameters)
-          }`)
-          
+            `https://quizzical-liskov-0bc7e1.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(queryStringParameters,
+            )}`,
+            ),
     }
       }
     );
