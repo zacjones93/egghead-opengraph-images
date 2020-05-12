@@ -80,7 +80,8 @@ function App() {
             padding: "2rem"
           }}
         >
-          {<div>{window.type}</div>}
+          {<Twemoji
+              options={{ className: "emoji", folder: "svg", ext: ".svg" }}>{window.type}</Twemoji>}
           <span>{window.author}</span>
         </div>
       </div>
