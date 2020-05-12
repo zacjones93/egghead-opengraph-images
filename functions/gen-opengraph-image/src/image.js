@@ -80,7 +80,7 @@ function App() {
             padding: "2rem"
           }}
         >
-          {window.type != null && <div>{window.type}</div>}
+          {<div>{window.type}</div>}
           <span>{window.author}</span>
         </div>
       </div>

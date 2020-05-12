@@ -26,9 +26,6 @@ exports.handler = async function (event, ctx) {
     }
       }
     );
-    console.log(`https://quizzical-liskov-0bc7e1.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
-      queryStringParameters
-    )}`)
     return {
       statusCode: 302,
       headers: {
