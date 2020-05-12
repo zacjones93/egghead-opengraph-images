@@ -26,7 +26,7 @@ exports.handler = async function(event, ctx) {
     content: `
   window.title = "${decodeURIComponent(queryStringParameters.title) || "No Title"}";
   window.type = "${decodeURIComponent(queryStringParameters.type) || "No Type" }";
-  window.author = "${decodeURIComponent(queryStringParameters.author) || "No Author"}";
+  window.author = "${queryStringParameters.author || "No Author"}";
   `
   });
   
