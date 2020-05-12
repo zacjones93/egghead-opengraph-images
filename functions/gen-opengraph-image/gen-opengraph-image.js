@@ -42,12 +42,6 @@ exports.handler = async function(event, ctx) {
 
     return {x, y, width, height}
   })
-
-  try {
-    await page.waitForResponse(/twemoji.maxcdn.com/, {timeout: 1200})
-  } catch (e) {
-    console.log(e)
-  }
   const screenshotBuffer = await page.screenshot({ clip: boundingRect });
   await browser.close();
   return {
