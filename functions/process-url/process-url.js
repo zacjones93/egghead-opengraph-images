@@ -12,7 +12,7 @@ exports.handler = async function (event, ctx) {
   try {
     // https://res.cloudinary.com/daxsro6st/image/upload/v1587129280/og-images/1x1-0050ff7f_tocst6.png
     const imageUrl = cloudinary.url(
-      `${process.env.ZAC_IMAGE_VERSION}/og-images/brick_refsja.png`,
+      `${process.env.ZAC_IMAGE_VERSION}/og-images/1x1-0050ff7f_tocst6.png`,
       {
         // resouce_type: "raw"
         sign_url: true,
