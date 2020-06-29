@@ -83,7 +83,7 @@ function App() {
             <Twemoji
               options={{ className: "emoji", folder: "svg", ext: ".svg" }}
             >
-              {window.type}
+              {window.type || "👨‍💻"}
             </Twemoji>
           }
           <span>{window.author}</span>
