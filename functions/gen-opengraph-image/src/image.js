@@ -10,7 +10,7 @@ function App() {
       css={{
         width: 1200,
         height: 630,
-        background: `hsl(197, 23%, 55%)`,
+        backgroundImage: `linear-gradient(0.25turn, #7086B7, #DEF2F7, #7086B7);`,
         position: "absolute",
         display: "flex",
         overflow: "hidden"
@@ -29,14 +29,13 @@ function App() {
             boxSizing: "border-box",
             margin: 0,
             padding: 0,
-            fontFamily: "proxima-nova",
-            fontWeight: 100
+            fontFamily: "system-ui"
           }
         }}
       />
       <div
         css={{
-          background: "hsl(0, 0%, 100%)",
+          background: "#041016",
           margin: "40px",
           display: "flex",
           flex: 1,
@@ -47,12 +46,12 @@ function App() {
       >
         <h1
           css={{
-            color: "#000000",
+            color: "#E9F5FB",
             height: "100%",
             textAlign: "center",
             padding: "5rem",
-            fontFamily: "proxima-nova",
-            fontWeight: 100
+            fontFamily: "system-ui",
+            fontWeight: 400
           }}
         >
           <Textfit
@@ -73,15 +72,20 @@ function App() {
         </h1>
         <div
           css={{
-            color: "#000000",
+            color: "#E9F5FB",
             display: "flex",
             justifyContent: "space-between",
             fontSize: 36,
             padding: "2rem"
           }}
         >
-          {<Twemoji
-              options={{ className: "emoji", folder: "svg", ext: ".svg" }}>{window.type}</Twemoji>}
+          {
+            <Twemoji
+              options={{ className: "emoji", folder: "svg", ext: ".svg" }}
+            >
+              {window.type}
+            </Twemoji>
+          }
           <span>{window.author}</span>
         </div>
       </div>
